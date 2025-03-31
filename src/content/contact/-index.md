@@ -3,10 +3,8 @@ title: "Contact Us"
 description: "meta description"
 draft: false
 info:
-  title: Why you should contact us!
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit recusandae voluptates doloremque veniam temporibus porro culpa ipsa, nisi soluta minima saepe laboriosam debitis nesciunt.
+  title: We'd love to hear from you!
+  description: Leave us a message or send us an email directly
   contacts:
-    - "phone: +88 125 256 452"
-    - "Mail: [info@bigspring.com](mailto:info@bigspring.com)"
-    - "Address: 360 Main rd, Rio, Brazil"
+    - "Mail: [admin@budyai.co](mailto:admin@budyai.co)"
 ---

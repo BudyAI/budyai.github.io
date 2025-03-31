@@ -5,6 +5,7 @@ import Cta from "@/layouts/components/Cta.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import { getEntry } from "astro:content";
 import type { CollectionEntry } from "astro:content";
+import Youtube from "@/shortcodes/Youtube";
 
 const homepage = (await getEntry(
   "homepage",
@@ -18,23 +19,38 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
   <section class="section pb-[50px]">
     <div class="container">
       <div class="row text-center">
-        <div class="mx-auto lg:col-10">
-          <h1 class="font-primary font-bold">{banner?.title}</h1>
-          {
-            banner?.content && (
-              <p class="mt-4" set:html={markdownify(banner.content)} />
+        <div class="mx-auto lg:col-9">
+          <div class="animate">
+            <h1 class="font-primary font-bold">{banner?.title}</h1>
+            {
+              banner?.content && (
+                <p class="mt-4" set:html={markdownify(banner.content)} />
+              )
+            }
+
+            {
+              banner?.button?.enable && (
+                <a class="btn btn-primary mt-4" href={banner.button.link}>
+                  {banner.button.label}
+                </a>
+              )
+            }
+          </div>
+
+          <!-- {
+            banner?.video && (<video class="mx-auto mt-12 animate-after" controls>
+                <source src={banner?.video} type="video/mp4" />
+              </video>
             )
-          }
+          } -->
 
           {
-            banner?.button?.enable && (
-              <a class="btn btn-primary mt-4" href={banner.button.link}>
-                {banner.button.label}
-              </a>
-            )
+            <div class="mx-auto mt-12 animate-after">
+              <Youtube client:load id="S_Oz7_LNxbY" title="BUDY AI Collection Platform Video" thumbnail="/images/thumbnail.png" />
+            </div>
           }
 
-          {
+          <!-- {
             banner?.image && (
               <Image
                 class="mx-auto mt-12"
@@ -44,14 +60,14 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
                 alt="banner image"
               />
             )
-          }
+          } -->
         </div>
       </div>
     </div>
   </section>
 
   <!-- Features -->
-  <section class="section bg-theme-light">
+  <!-- <section class="section bg-theme-light">
     <div class="container">
       <div class="text-center">
         <h2>{markdownify(feature.title)}</h2>
@@ -78,10 +94,10 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
         }
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Services -->
-  {
+  <!-- {
     services!.map((service, index) => {
       const isOdd = index % 2 > 0;
       return (
@@ -144,11 +160,11 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
         </section>
       );
     })
-  }
+  } -->
   <!-- /End service -->
 
   <!-- Workflow -->
-  <section class="section pb-0">
+  <!-- <section class="section pb-0">
     <div class="mb-8 text-center">
       <h2
         class="mx-auto max-w-[400px] font-bold leading-[44px]"
@@ -162,10 +178,10 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
       width={1920}
       height={414}
     />
-  </section>
+  </section> -->
 
   <!-- Call to Action -->
-  <Cta cta={call_to_action} />
+  <!-- <Cta cta={call_to_action} /> -->
 </Base>
 
 <script>

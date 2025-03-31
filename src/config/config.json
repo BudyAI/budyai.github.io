@@ -1,14 +1,14 @@
 {
   "site": {
-    "title": "Bigspring Light Astro",
+    "title": "BUDY AI",
     "base_url": "https://budyai.github.io",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
+    "favicon": "/images/favicon.jpg",
+    "logo": "/images/logo.jpg",
     "logo_width": "200",
     "logo_height": "38",
-    "logo_text": "Astroplate"
+    "logo_text": "BUDY AI"
   },
 
   "settings": {
@@ -18,20 +18,20 @@
 
   "nav_button": {
     "enable": true,
-    "label": "Get Started",
+    "label": "Request a demo",
     "link": "/contact"
   },
 
   "params": {
-    "contact_form_action": "",
+    "contact_form_action": "https://submit-form.com/x28Mu6MRe",
     "tag_manager_id": "",
-    "footer_content": "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur.",
-    "copyright": "Designed and Developed By [Themefisher](https://themefisher.com/)"
+    "footer_content": "",
+    "copyright": "© 2025 BUDY AI. All rights reserved."
   },
 
   "metadata": {
-    "meta_author": "Themefisher",
+    "meta_author": "BUDY AI",
     "meta_image": "/images/og-image.png",
-    "meta_description": "astro boilerplate"
+    "meta_description": "BUDY AI website"
   }
 }

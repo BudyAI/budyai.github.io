@@ -1,8 +1,9 @@
 ---
 banner:
-  title: Let us solve your critical website development challenges
-  content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque <br/> totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus
+  title: Streamline Your AR Collections with AI
+  content: BUDY is an AI-Powered AR Management for Collection Teams. We help collection teams accelerate cash flow by leveraging AI to generate intelligent, personalized follow-ups and reminders.
   image: /images/banner-art.png
+  video: /videos/migdal-video.mp4
   button:
     enable: true
     label: "Contact Us"

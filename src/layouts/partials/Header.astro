@@ -18,6 +18,7 @@ export interface NavigationLink {
 }
 
 const { main }: { main: NavigationLink[] } = menu;
+const isActive = (url: string) => url === '/' ? pathname === url : pathname.startsWith(url);
 ---
 
 <header class="header">
@@ -73,7 +74,7 @@ const { main }: { main: NavigationLink[] } = menu;
                       <a
                         href={child.url}
                         class={`nav-dropdown-link block ${
-                          pathname === child.url && "nav-link-active"
+                          isActive(child.url) && "nav-link-active"
                         }`}
                       >
                         {child.name}
@@ -87,7 +88,7 @@ const { main }: { main: NavigationLink[] } = menu;
                 <a
                   href={menu.url}
                   class={`nav-link block ${
-                    pathname === menu.url && "nav-link-active"
+                    isActive(menu.url) && "nav-link-active"
                   }`}
                 >
                   {menu.name}

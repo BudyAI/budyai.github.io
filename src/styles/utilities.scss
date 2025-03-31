@@ -9,3 +9,39 @@ code {
 .shadow {
   box-shadow: 0 12px 24px -6px rgba(45,67,121,.1);
 }
+
+@keyframes fadeInUp3D {
+  from {
+      opacity: 0;
+      transform: translate3d(0px, 50px, 0px);
+  }
+  to {
+      opacity: 1;
+      transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+@keyframes fadeScaleInUp3D {
+  from {
+      opacity: 0;
+      transform: translate3d(0px, 50px, 0px) scale3d(0.9, 0.9, 1);
+  }
+  to {
+      opacity: 1;
+      transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+  }
+}
+
+.animate {
+  opacity: 0;
+  transform: translate3d(0px, 50px, 0px);
+  animation: fadeInUp3D 0.5s ease-out forwards;
+  transform-style: preserve-3d;
+}
+
+.animate-after {
+  opacity: 0;
+  transform: translate3d(0px, 50px, 0px) scale3d(0.9, 0.9, 1);
+  animation: fadeScaleInUp3D 0.7s ease-out 0.5s forwards;
+  transform-style: preserve-3d;
+}

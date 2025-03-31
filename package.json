@@ -1,9 +1,7 @@
 {
   "name": "budyai",
-  "version": "3.0.0",
-  "description": "astro personal blog theme",
-  "author": "themefisher",
-  "license": "MIT",
+  "version": "1.0.0",
+  "description": "BUDY AI website",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
