@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "BUDY AI",
-    "base_url": "https://budyai.github.io",
+    "base_url": "https://budyai.co",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.jpg",
